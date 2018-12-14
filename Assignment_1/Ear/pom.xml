@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+	        <groupId>Norton.Quickheal.Mcafee</groupId>
+			<artifactId>Root</artifactId>
+			<version>1.1-SNAPSHOT</version>
+			<relativePath>../Root</relativePath>
+	</parent>
+			<groupId>Lenovo.Dell.Asus</groupId>
+			<artifactId>Ear</artifactId>
+			<packaging>ear</packaging>
+			<version>1.0-SNAPSHOT</version>
+			<name>Ear</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>Lenovo.Dell.Asus</groupId>
+  			<artifactId>Laptops</artifactId>
+ 			<version>1.0-SNAPSHOT</version>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>Norton.Quickheal.Mcafee</groupId>
+  			<artifactId>Anti-Virus</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<type>jar</type>
+		</dependency>
+	</dependencies>
+      <distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Release Repository</name>
+			<url>http://DESKTOP-V0VT7HJ:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Snapshot Repository</name>
+			<url>http://DESKTOP-V0VT7HJ:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>
